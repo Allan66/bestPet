@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/login/styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="cadastrarServicos.js"></script>
+    <link rel="icon" type="imagem/jpeg" href="/img/iconeAzul.jpeg" />
+    <title>Best Pet</title>
+</head>
+
+<body>
+    <header>
+        <div id="menu">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="/home/home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/servicosCadastrados/cadastrarServicos.html">Serviços Cadastrados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/cadastro/cadastroEmpresa.html">Dados da Empresa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/controle/controle.html">Controle </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sair</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div id="central">
+        <h1>Cadastro de Serviços</h1>
+        <form action="">
+            <p>Selecione as categorias que sua empresa atende, em seguida, escreva os serviços especificos, e separe por virgulas.</p>
+            <input type="checkbox"> Veterinária &nbsp; &nbsp;&nbsp;
+            <input type="checkbox"> Estética Pet &nbsp; &nbsp; &nbsp;
+            <input type="checkbox"> Produtos para Pets
+            <input type="text" class="form-control col-md-8 offset-md-2" id="servicosPrestados" placeholder="Digite o serviço especifico e separe por virgulas. " required>
+            <button type="submit" class="btn btn-primary" id="btnCadastro"> Confirmar</button>
+        </form>
+    </div>
+    <footer>
+        <!-- Alguma informação importante-->best pet aplicativo best pet redes sociais
+    </footer>
+</body>
+
+</html>

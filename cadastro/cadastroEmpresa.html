@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/login/styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="scriptCadastro.js"></script>
+    <script src="/login/jquery.maskedinput-1.1.4.pack.js"></script>
+    <link rel="icon" type="imagem/jpeg" href="/img/iconeAzul.jpeg" />
+    <title>Best Pet</title>
+</head>
+
+<body>
+    <header>
+        <div id="menu">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link" href="/home/home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/servicosCadastrados/cadastrarServicos.html">Serviços Cadastrados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/cadastro/cadastroEmpresa.html">Dados da Empresa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/controle/controle.html">Controle </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sair</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <h1>Cadastro da Empresa</h1>
+
+    <form id="frmCadastro">
+
+        <div class="form-group col-md-10 offset-md-1">
+            <label for="inputName">Nome da Empresa:</label>
+            <input type="text" class="form-control" id="Empresa" placeholder="Nome da Empresa" min="1" maxlength="90" required>
+        </div>
+        <div class="form-group col-md-4 offset-md-1">
+            <label for="cnpj">CNPJ</label>
+            <input type="text" class="form-control" id="cnpj" placeholder="Digite seu CNPJ ">
+        </div>
+        <div class="input-group">
+            <div class="form-group col-md-4 offset-md-1" id="contato">
+                <label for="contato">Telefone para contato:</label>
+                <input type="tel" class="form-control" placeholder="(11)99999-9999" required style="float: left;">
+            </div>
+            <div class="form-group col-md-4 offset-md-0" id="telefone2">
+                <label for="contato">Telefone para contato 2:</label>
+                <input type="tel" class="form-control" id="contato2" placeholder="(11)99999-9999">
+            </div>
+        </div>
+        <div class="form-group col-md-3 offset-md-1">
+            <label for="inputCep">CEP: </label>
+            <input type="text" class="form-control" id="cep" placeholder="00101-429">
+        </div>
+        <div class="input-group">
+            <div class="form-group col-md-4 offset-md-1">
+                <label for="inputAdress">Rua: </label>
+                <input type="text" class="form-control" id="rua" placeholder="Rua dos pets, 644 - Casa 3" maxlength="90">
+            </div>
+            <div class="form-group col-md-2 offset-md-0" id="numeroDiv">
+                <label for="inputAdress">Número: </label>
+                <input type="text" class="form-control" id="numero" placeholder="Número" maxlength="90">
+            </div>
+            <div class="form-group col-md-4 offset-md-0" id="bairroDiv">
+                <label for="inputAdress">Bairro: </label>
+                <input type="text" class="form-control" id="bairro" maxlength="90">
+            </div>
+            <div class="form-group col-md-4 offset-md-1" id="cidadeDiv">
+                <label for="inputCity">Cidade:</label>
+                <input type="text" class="form-control" id="cidade" max="40">
+            </div>
+            <div class="form-group col-md-1 offset-md-0" id="estadoDiv">
+                <label for="inputCity">Estado:</label>
+                <input type="text" class="form-control" id="uf" max="40">
+            </div>
+        </div>
+        <div class="form-group col-md-10 offset-md-1">
+            <label for="senha">Digite uma senha</label>
+            <input type="password" class="form-control" id="senha" required>
+        </div>
+        <div class="form-group col-md-10 offset-md-1">
+            <label for="senha">Confirme a senha</label>
+            <input type="password" class="form-control" id="confirmarSenha" required>
+        </div>
+        <div class="form-row text-center">
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary" id="botaocadastro">Cadastrar</button>
+            </div>
+        </div>
+    </form>
+    <table id="tblListar">
+
+    </table>
+    <footer>
+        <!-- Alguma informação importante-->best pet aplicativo best pet redes sociais</footer>
+</body>
+
+</html>
